@@ -11,7 +11,8 @@ pvc:
 # Frontend settings
 frontend:
   replicaCount: 1
-  image: "sowmiyahemanth/php-app"
+  image: "sowmiyahemanth/php-app:TAG"
+  tag : 
   containerPort: 80
   service:
     type: LoadBalancer
@@ -21,3 +22,5 @@ frontend:
     DB_USER: "root"
     DB_PASSWORD: "rootpassword"
     DB_NAME: "echo_digital_works"
+
+
