@@ -4,12 +4,10 @@ mysql:
   rootPassword: "rootpassword"
   database: "echo_digital_works"
   initSql: "init.sql"
-
 # Persistent Volume settings
 pvc:
   size: 5Gi
   storageClassName: "kops-csi-1-21"
-  
 # Frontend settings
 frontend:
   replicaCount: 1
